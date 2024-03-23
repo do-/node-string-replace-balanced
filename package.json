@@ -1,0 +1,47 @@
+{
+  "name": "string-replace-balanced",
+  "version": "1.0.0",
+  "description": "Replace simple custom tags",
+  "main": "index.js",
+  "files": ["/lib", "/badges"],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test-ci": "node --experimental-vm-modules node_modules/jest/bin/jest.js --ci --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/do-/node-string-replace-balanced.git"
+  },
+  "keywords": [
+    "replace",
+    "tags",
+    "braces"
+  ],
+  "author": "Dmitry Ovsyanko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/do-/node-string-replace-balanced/issues"
+  },
+  "homepage": "https://github.com/do-/node-string-replace-balanced#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      "text",
+      "json-summary"
+    ],
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/data",
+      "/__tests__/lib"
+    ]
+  }
+}
